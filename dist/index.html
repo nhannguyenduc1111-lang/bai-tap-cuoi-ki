@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HỆ THỐNG ĐIỀU HÀNH NHÂN SỰ & TIỀN LƯƠNG - CÔNG TY A</title>
     <script>
-      // Tự động chuyển hướng sang bản đóng gói độc lập khi mở trực tiếp tệp gốc từ ổ đĩa (file://)
-      if (window.location.protocol === 'file:' && !window.location.pathname.replace(/\\/g, '/').includes('/dist/')) {
+      // Tự động chuyển hướng sang bản đóng gói độc lập khi mở trực tiếp tệp gốc từ ổ đĩa (file://) hoặc GitHub Pages
+      if ((window.location.protocol === 'file:' || window.location.hostname.endsWith('github.io')) && !window.location.pathname.replace(/\\/g, '/').includes('/dist/')) {
         window.location.replace('./dist/index.html');
       }
     </script>
